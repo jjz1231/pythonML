@@ -22,10 +22,11 @@ X_train, X_test, y_train, y_test = train_test_split(
 # print("X_test shape: {}".format(X_test.shape))
 # print("y_test shape: {}".format(y_test.shape))
 
-# iris_dataframe = pandas.DataFrame(X_train, columns = iris_dataset.feature_names)
+iris_dataframe = pandas.DataFrame(X_train, columns = iris_dataset.feature_names)
 
-# grr = pandas.plotting.scatter_matrix(iris_dataframe, c = y_train, figsize = (15, 15), marker = 'o', hist_kwds = {'bins': 20}, s = 60, alpha = 0.8, cmap = mglearn.cm3)
+grr = pandas.plotting.scatter_matrix(iris_dataframe, c = y_train, figsize = (15, 15), marker = 'o', hist_kwds = {'bins': 20}, s = 60, alpha = 0.8, cmap = mglearn.cm3)
 
+plt.show()
 
 from sklearn.neighbors import KNeighborsClassifier
 
